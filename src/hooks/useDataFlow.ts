@@ -15,6 +15,11 @@ export const useDateFlow = () => {
         setStep(1);
     }
 
+    // Change phase
+    const nextPhase = () => {
+        
+    }
+
     const recordWinner = (winner: Activity) => {
         setFinalDate([...finalDate, winner]);
         setStep((prev) => prev + 1);

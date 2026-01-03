@@ -1,5 +1,10 @@
-import type { Activity, Category, Sticker } from '../types';
+import type { Activity, Category, Sticker, AttireType } from '../types';
 
+export const ATTIRE_OPTIONS: { type: AttireType; label: string; description: string }[] = [
+  { type: 'Cozy', label: '☁️ Cozy', description: 'Sweatpants & Chill' },
+  { type: 'Casual', label: '👟 Casual', description: 'Easygoing & Fun' },
+  { type: 'Fancy', label: '✨ Fancy', description: 'Dress to Impress' },
+];
 
 export const ACTIVITIES: Activity[] = [
   // COZY ACTIVITIES

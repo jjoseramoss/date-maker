@@ -1,5 +1,15 @@
 export type AttireType = 'Cozy'  | 'Fancy' | 'Casual'
 
+export type PlanningPhase = 'ATTIRE' | 'MAIN_EVENT' | 'NIGHT_CAP' | 'SUMMARY';
+
+export interface AttireOption {
+    id: number;
+    type: string;
+    label: string;
+    description: string;
+    onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => string;
+}
+
 export interface Activity {
     id: string;
     title: string;
